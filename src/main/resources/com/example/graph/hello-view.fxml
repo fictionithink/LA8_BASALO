@@ -3,30 +3,17 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.text.Text?>
 
 <VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.graph.HelloController">
    <children>
-      <AnchorPane fx:id="apPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <StackPane layoutX="60.0" layoutY="58.0" onMouseClicked="#onVertexClicked" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="302.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="58.0">
-               <children>
-                  <Circle fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="25.13671875" />
-               </children>
-            </StackPane>
-            <StackPane layoutX="60.0" layoutY="180.0" onMouseClicked="#onVertexClicked" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="180.0">
-               <children>
-                  <Circle fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="25.13671875" />
-               </children>
-            </StackPane>
-         </children>
-      </AnchorPane>
+      <AnchorPane fx:id="apPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" />
       <Button mnemonicParsing="false" onAction="#onSaveClicked" text="SAVE" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets left="240.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onAddCircleClicked" text="ADD">
          <VBox.margin>
             <Insets left="240.0" />
          </VBox.margin>
